@@ -1,128 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/JsProjMyPart/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/JsProjMyPart/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/JsProjMyPart/assets/styles-DvPDDfy5.css">
-  </head>
-  <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/JsProjMyPart/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Чому Хатинка Лапок</title>
+  <link rel="icon" href="./img/favicon.ico" />
+  <script type="module" crossorigin src="/JsProjMyPart/index.js"></script>
+  <link rel="modulepreload" crossorigin href="/JsProjMyPart/assets/vendor-BsAx7pd3.js">
+  <link rel="stylesheet" crossorigin href="/JsProjMyPart/assets/vendor-DnGaGgwy.css">
+  <link rel="stylesheet" crossorigin href="/JsProjMyPart/assets/index-CIQ_k1ar.css">
+</head>
+<body>
 
-
-    <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
+<section class="about-us" id="about-us">
   <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/JsProjMyPart/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
+    <h2 class="about-title">Чому Хатинка Лапок</h2>
+
+    <!-- Слайдер -->
+    <div class="swiper about-swiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide about-slide">
+          <img class="about-img" src="/JsProjMyPart/assets/Rectangle%201-min-BgL4_ISf.jpg" alt="Факт 1" />
+          <p class="about-text">Все почалося у 2015 році з кількох небайдужих людей та одного врятованого собаки. Сьогодні ми — один з найбільших притулків у регіоні, але наша мета незмінна: дати другий шанс тим, кого зрадили.</p>
+        </div>
+
+        <div class="swiper-slide about-slide">
+          <img class="about-img" src="/JsProjMyPart/assets/Rectangle%202-min-CbEf_Qha.jpg" alt="Факт 2" />
+          <p class="about-text">Ми рятуємо, реабілітуємо та знаходимо люблячі родини для безпритульних тварин. Наша мета — не просто дати прихисток, а й забезпечити кожному "хвостику" щасливе та повноцінне життя в новій родині.</p>
+        </div>
+
+        <div class="swiper-slide about-slide">
+          <img class="about-img" src="/JsProjMyPart/assets/Rectangle%203-min-DRgdvDZa.jpg" alt="Факт 3" />
+          <p class="about-text">"Хатинка Лапок" — це команда професійних ветеринарів, кінологів та десятків волонтерів, які щодня вкладають свою душу та час у турботу про наших підопічних. Ми працюємо 24/7, бо їхнє життя залежить від нас.</p>
+        </div>
+
+        <div class="swiper-slide about-slide">
+          <img class="about-img" src="/JsProjMyPart/assets/Rectangle%204-min-TC1Kfm-K.jpg" alt="Факт 4" />
+          <p class="about-text">Ми створили безпечний та комфортний простір. Кожна тварина отримує якісне харчування, своєчасну ветеринарну допомогу, проходить соціалізацію та гуляє на спеціально обладнаних майданчиках.</p>
+        </div>
+
+        <div class="swiper-slide about-slide">
+          <img class="about-img" src="/JsProjMyPart/assets/Rectangle%205-min-DWhEHAni.jpg" alt="Факт 5" />
+          <p class="about-text">Ваша допомога — безцінна. Ви можете взяти тваринку додому, стати волонтером, допомогти фінансово або інформаційно. Кожен маленький внесок наближає нас до великої мети — світу без безпритульних тварин.</p>
+        </div>
+
+      </div>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
+
+    <!-- Контролі: пагінація + кнопки -->
+    
+<div class="about-controls">
+      <div class="swiper-pagination"></div>
+      <div class="about-nav">
+        <button class="swiper-btn prev-btn" aria-label="Попередній слайд">◀</button>
+        <button class="swiper-btn next-btn" aria-label="Наступний слайд">▶</button>
+      </div>
+    </div>
   </div>
+  
 </section>
 
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
-  </div>
-</article>
-
-    </main>
-
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer>
-
-
-  </body>
+</body>
 </html>
