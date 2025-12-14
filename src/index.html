@@ -1,23 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Чому Хатинка Лапок</title>
+  <link rel="stylesheet" href="./about_us.css" />
+  <link rel="icon" href="./img/favicon.ico" />
+</head>
+<body>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+<section class="about-us" id="about-us">
+  <div class="container">
+    <h2 class="about-title">Чому Хатинка Лапок</h2>
 
-    <load src="./partials/footer.html" />
+    <!-- Слайдер -->
+    <div class="swiper about-swiper">
+      <div class="swiper-wrapper">
 
-    <script type="module" src="./main.js"></script>
-  </body>
+        <div class="swiper-slide about-slide">
+          <img class="about-img" src="./img/Rectangle 1-min.jpg" alt="Факт 1" />
+          <p class="about-text">Все почалося у 2015 році з кількох небайдужих людей та одного врятованого собаки. Сьогодні ми — один з найбільших притулків у регіоні, але наша мета незмінна: дати другий шанс тим, кого зрадили.</p>
+        </div>
+
+        <div class="swiper-slide about-slide">
+          <img class="about-img" src="./img/Rectangle 2-min.jpg" alt="Факт 2" />
+          <p class="about-text">Ми рятуємо, реабілітуємо та знаходимо люблячі родини для безпритульних тварин. Наша мета — не просто дати прихисток, а й забезпечити кожному "хвостику" щасливе та повноцінне життя в новій родині.</p>
+        </div>
+
+        <div class="swiper-slide about-slide">
+          <img class="about-img" src="./img/Rectangle 3-min.jpg" alt="Факт 3" />
+          <p class="about-text">"Хатинка Лапок" — це команда професійних ветеринарів, кінологів та десятків волонтерів, які щодня вкладають свою душу та час у турботу про наших підопічних. Ми працюємо 24/7, бо їхнє життя залежить від нас.</p>
+        </div>
+
+        <div class="swiper-slide about-slide">
+          <img class="about-img" src="./img/Rectangle 4-min.jpg" alt="Факт 4" />
+          <p class="about-text">Ми створили безпечний та комфортний простір. Кожна тварина отримує якісне харчування, своєчасну ветеринарну допомогу, проходить соціалізацію та гуляє на спеціально обладнаних майданчиках.</p>
+        </div>
+
+        <div class="swiper-slide about-slide">
+          <img class="about-img" src="./img/Rectangle 5-min.jpg" alt="Факт 5" />
+          <p class="about-text">Ваша допомога — безцінна. Ви можете взяти тваринку додому, стати волонтером, допомогти фінансово або інформаційно. Кожен маленький внесок наближає нас до великої мети — світу без безпритульних тварин.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Контролі: пагінація + кнопки -->
+    
+<div class="about-controls">
+      <div class="swiper-pagination"></div>
+      <div class="about-nav">
+        <button class="swiper-btn prev-btn" aria-label="Попередній слайд">◀</button>
+        <button class="swiper-btn next-btn" aria-label="Наступний слайд">▶</button>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<script type="module" src="./about_us.js"></script>
+</body>
 </html>
